@@ -1,0 +1,29 @@
+<head>
+  <link rel="stylesheet" href="./canvas.css" type="text/css">
+</head>
+<body>
+<form id='form1' method='POST' action="/action_page.php">
+<div id="sketch">
+  <canvas id="paint"></canvas>
+</div>
+
+<div id="settings"> Colours
+  <button onclick="getColor('blue');">Blue</button>
+  <button onclick="getColor('red');">Red</button>
+  <button onclick="getColor('green');">Green</button>
+  <button onclick="getColor('white');">White</button>
+  <button onclick="getColor('#333333');">Eraser</button>
+</div>
+
+<div id="settings"> Brush Size
+  <button onclick="getSize('2');">Small</button>
+  <button onclick="getSize('5');">Med</button>
+  <button onclick="getSize('10');">Large</button>
+  <button onclick="getSize('20');">X Large</button>
+</div>
+<div style="margin-left: 47%;margin-top: 1%;">
+<input type="submit" value="Identify the Character">
+</div>
+</form>
+<script type="text/javascript" src="./canvas.js"></script>
+</body>
